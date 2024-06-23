@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hub.css">
+</head>
+<body>
+
+    <nav>
+      
+     <h1 style="color: yellow;">BUNDELI </h1>
+   
+     <h1 style="color: red;">HUB </h1>
+   
+        <div class="nav-part2">
+            <ul class="flex ">
+                <div class="nav-elem">
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <h5><span>Cricket</span></h5>
+                    <h5><span>football</span></h5>
+                    <h5><span>IPL</span></h5>
+                  </div>
+                 <div class="nav-elem">
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <h5><span>GOV issues</span></h5>
+    <h5><span>IR</span></h5>
+                 </div>
+                  <div class="nav-elem">
+                    <li class="hover-link nav-item" id="adult-content" onclick="onNavItemClick('adult-content')">Adult-content</li>
+                    <h5><span>Indian</span></h5>
+        <h5><span>Russian</span></h5>
+        <h5><span>African</span></h5>
+        <h5><span>chinees</span></h5>
+                  </div>
+                  <div class="nav-elem">
+                    
+                    <li class="hover-link nav-item" id="Science-Fun" onclick="onNavItemClick('Science-fun')">Science-fun</li>
+                    <h5><span>Technology</span></h5>
+                    <h5><span>Space</span></h5>
+                    <h5><span>Bio</span></h5>
+                    <h5><span>Physics</span></h5>
+                  </div>
+                  <div class="nav-elem">
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('Finance')">Finance</li>
+                    <h5><span>business</span></h5>
+                    <h5><span>GS</span></h5>
+                    <h5><span>RBI</span></h5>
+                    <h5><span>IR</span></h5>
+                  </div>
+            </ul>
+        </div>
+        <div class="search-bar ">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+        <div class="nav-bottom">
+
+        </div>
+     
+    </nav>
+   <main class="arpit">
+    <div class="card-container " id="card-container">
+    
+    </div>
+</main>
+<template  id="template-news-card"  >
+    <div class="card">
+        <div class="card-header">
+        <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-image">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+
+        </div>
+    </div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="hub.js"></script>
+</body>
+</html>
